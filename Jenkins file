@@ -9,7 +9,7 @@ steps {    bat label: '', script: 'mvn clean'
            bat label: '', script: 'mvn install'}
 }
 stage ("DEPLOY ") { 
-steps {bat label: '', script: 'xcopy /y "C:\\Program Files (x86)\\Jenkins\\workspace\\MB-Project\\target\\my-app.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps"' 
+steps {bat label: '', script: 'xcopy /y "C:\\Program Files (x86)\\Jenkins\\workspace\\MB-Project\\target\\my-app.war" "C:\\Program Files\\Apache Software Foundation\\Tomcat 8.5\\webapps"' }
 }
 }
 }
